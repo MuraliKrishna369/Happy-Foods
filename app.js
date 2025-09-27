@@ -8,7 +8,7 @@ app.use(cors());
 
 app.get("/restaurants", async (req, res) => {
   try {
-    console.log("I am hitted")
+    
     const response = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4356626&lng=78.44087999999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
       {
